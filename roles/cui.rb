@@ -1,3 +1,5 @@
+include_recipe '../cookbooks/homebrew/default.rb'
+
 include_recipe '../cookbooks/base/default.rb'
 
 include_recipe '../cookbooks/languages/default.rb'

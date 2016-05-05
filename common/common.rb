@@ -33,4 +33,16 @@ class Common
       'tree',
   ]
 
+  GuiPackages = [
+    'google-chrome',
+    'alfred',
+    'vagrant',
+    'virtualbox',
+    'dropbox',
+    'iterm2',
+    '1password',
+    'intellij-idea',
+    'vlc',
+  ]
+
 end
