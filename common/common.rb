@@ -43,6 +43,9 @@ class Common
     '1password',
     'intellij-idea',
     'vlc',
+    'shiftit',
+    'aquaskk',
+    'ticktick',
   ]
 
 end
