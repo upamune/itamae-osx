@@ -1,3 +1,5 @@
+require_relative '../common/formula'
+
 class Common
   BasePackages = [
     'git',
@@ -33,19 +35,23 @@ class Common
       'tree',
   ]
 
-  GuiPackages = [
-    'google-chrome',
-    'alfred',
-    'vagrant',
-    'virtualbox',
-    'dropbox',
-    'iterm2',
-    '1password',
-    'intellij-idea',
-    'vlc',
-    'shiftit',
-    'aquaskk',
-    'ticktick',
+  GUI_FORMULA = [
+      Formula.new('google-chrome'),
+      Formula.new('alfred'),
+      Formula.new('vagrant'),
+      Formula.new('virtualbox'),
+      Formula.new('dropbox'),
+      Formula.new('iterm2'),
+      Formula.new('1password'),
+      Formula.new('intellij-idea'),
+      Formula.new('vlc'),
+      Formula.new('shiftit'),
+      Formula.new('ticktick'),
+      Formula.new('night-owl'),
+      Formula.new('slack'),
+      Formula.new('gyazo'),
+      Formula.new('rubymine'),
+      Formula.new('aquaskk', 'upamune/homebrew-aereal_casks'),
   ]
 
 end

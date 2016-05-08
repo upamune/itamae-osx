@@ -1,4 +1,4 @@
-require_relative("../../common/common")
+require_relative '../../common/common'
 
 # Install brew cask
 execute 'tap cask' do
@@ -15,10 +15,16 @@ execute 'tap aquaskk' do
   command 'brew tap upamune/homebrew-aereal_casks'
 end
 
-Common::GuiPackages.each do |pkg|
-  execute "Install #{pkg}" do
+Common::GUI_FORMULA.each do |formula|
+  if formula.hasTap
+    execute "Tap #{formula.tap}" do
+      user 'upamune'
+      command "brew tap '#{formula.tap}'"
+    end
+  end
+
+  execute "Install #{formula.package}" do
     user 'upamune'
-    command "brew cask install --appdir='#{HOME_PATH}/Applications' '#{pkg}'"
+    command "brew cask install --appdir='#{HOME_PATH}/Applications' '#{formula.package}'"
   end
 end
-
