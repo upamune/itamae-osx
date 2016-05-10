@@ -44,6 +44,7 @@ class Common
       Formula.new('iterm2'),
       Formula.new('1password'),
       Formula.new('intellij-idea'),
+      Formula.new('webstorm'),
       Formula.new('vlc'),
       Formula.new('shiftit'),
       Formula.new('ticktick'),
